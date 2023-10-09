@@ -13,8 +13,8 @@ async function Users() {
       Users page
       <br />
       {users.map(user => (
-        <div>
-          <Link href={`/users/${user.id}`} key={user.id}>{user.name}</Link>
+        <div key={user.id}>
+          <Link href={`/users/${user.id}`} >{user.name}</Link>
         </div>
       ))}
     </div>

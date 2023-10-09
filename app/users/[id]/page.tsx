@@ -5,6 +5,12 @@ import UserPosts from "./components/UserPosts";
 interface Props {
     params: { id: string }
 }
+type Post = {
+    userId : string,
+    id : string,
+    title : string,
+    body : string
+  }
 export const generateMetadata = async ({ params: { id } }: Props) => {
     const userData: Promise<User> = getUser(id);
     const user = await userData;

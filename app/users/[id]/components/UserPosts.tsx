@@ -1,3 +1,9 @@
+type Post = {
+    userId : string,
+    id : string,
+    title : string,
+    body : string
+  }
 type Props = {
     promise: Promise<Post[]>
 }
